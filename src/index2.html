@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obchod Tlapka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="indexstylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5" style="max-width: 900px;">
+    <h2 class="text-center fw-bold mb-4">Jak se starat o své mazlíčky</h2>
+    <div class="row">
+        <div class="col-4">
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action active" href="#list-item-1">Péče o psy</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Péče o kočky</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Péče o hlodavce</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Tipy na pamlsky</a>
+            </div>
+        </div>
+
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                 class="scrollspy-example p-3 bg-white rounded border shadow-sm"
+                 tabindex="0" style="height: 400px; overflow-y: auto;">
+
+                <h4 id="list-item-1">Péče o psy</h4>
+                <p>
+                    Psi potřebují pravidelný
+                    <span data-bs-toggle="tooltip" title="Procházky alespoň dvakrát denně.">pohyb</span>,
+                    kvalitní
+                    <span data-bs-toggle="tooltip" title="Granule, konzervy nebo domácí vařená strava.">krmivo</span>
+                    a dostatek pozornosti.
+                    Nezapomínejte na
+                    <span data-bs-toggle="tooltip" title="Kartáčování, koupání a kontrola drápků.">péči o srst</span> – udržuje ji zdravou a lesklou.
+                </p>
+
+                <h4 id="list-item-2">Péče o kočky</h4>
+                <p>
+                    Kočky ocení čistou
+                    <span data-bs-toggle="tooltip" title="Stelivo je vhodné měnit alespoň jednou týdně.">toaletu</span>
+                    a dostatek
+                    <span data-bs-toggle="tooltip" title="Pomáhá předcházet problémům s ledvinami.">čerstvé vody</span>.
+                    Nabídněte jim
+                    <span data-bs-toggle="tooltip" title="Zabrání poškození nábytku.">škrabadlo</span>
+                    a prostor k odpočinku.
+                </p>
+
+                <h4 id="list-item-3">Péče o hlodavce</h4>
+                <p>
+                    Hlodavci potřebují
+                    <span data-bs-toggle="tooltip" title="Např. hobliny, kukuřičné nebo papírové stelivo.">čisté prostředí</span>
+                    a čerstvou
+                    <span data-bs-toggle="tooltip" title="Mrkev, paprika, okurka – ideální pamlsek.">zeleninu</span>.
+                    Přidejte
+                    <span data-bs-toggle="tooltip" title="Tunely, kolečka nebo domečky.">hračky</span>,
+                    aby měli dost pohybu i zábavy.
+                </p>
+
+                <h4 id="list-item-4">Tipy na pamlsky</h4>
+                <p>
+                    Pamlsky jsou skvělou
+                    <span data-bs-toggle="tooltip" title="Pomáhá upevnit pozitivní chování.">odměnou</span>
+                    a způsobem, jak posílit vztah mezi vámi a mazlíčkem.
+                    Vybírejte
+                    <span data-bs-toggle="tooltip" title="Bez umělých barviv, cukru a soli.">kvalitní produkty</span>
+                    z přírodních surovin.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
